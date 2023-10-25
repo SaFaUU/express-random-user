@@ -1,8 +1,8 @@
-Here is a formatted readme.md file for the NodeJS API documentation:
-
 # Express Random User API
 
 This is the API documentation for an Express NodeJS server that provides CRUD operations for random user data.
+
+## Live Link: https://express-random-user-safauu.vercel.app/
 
 ## Endpoints
 

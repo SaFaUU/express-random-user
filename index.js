@@ -1,15 +1,22 @@
 const express = require('express')
-const cors = require('cors')
+require("dotenv").config();
+var cors = require('cors')
 const fs = require('fs')
 const usersRoutes = require('./routes/v1/users.route')
 
 
-const router = express.Router()
-const PORT = 5000
+const PORT = process.env.PORT || 5000
 const app = express()
+
 
 app.use(cors())
 app.use(express.json())
+
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    next();
+});
+
 app.use('/user', usersRoutes)
 
 app.get('/', (req, res) => {

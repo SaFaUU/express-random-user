@@ -27,4 +27,4 @@ router.route("/bulk-update").put(
     usersController.bulkUpdate
 )
 
-module.exports = router
+module.exports = router;
