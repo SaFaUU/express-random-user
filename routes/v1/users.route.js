@@ -15,7 +15,7 @@ router.route("/save").post(
     usersController.saveUser
 )
 
-router.route("/update/:id").put(
+router.route("/update/:id").patch(
     usersController.updateUser
 )
 
@@ -23,7 +23,7 @@ router.route("/delete/:id").delete(
     usersController.deleteUser
 )
 
-router.route("/bulk-update").put(
+router.route("/bulk-update").patch(
     usersController.bulkUpdate
 )
 
