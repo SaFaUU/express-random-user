@@ -47,7 +47,7 @@ Saves a new user. Returns the saved user object.
 ### Update user
 
 ```
-PUT /user/update/:id
+PATCH /user/update/:id
 ```
 
 Body:
@@ -71,7 +71,7 @@ Deletes a user by ID. Returns success message.
 ### Bulk update users
 
 ```
-PUT /user/bulk-update
+PATCH /user/bulk-update
 ```
 
 Body:
